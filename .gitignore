@@ -1,0 +1,15 @@
+# Screenshots (dočasné, nepushovat)
+_temp-screenshots/
+
+# Temp soubory
+.tmp/
+
+# Environment
+.env
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
