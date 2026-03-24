@@ -17,14 +17,14 @@
         :root {
             --dark:       #0E1117;
             --steel:      #1C3252;
-            --gold:       #C9A96E;
-            --gold-d:     #A8864D;
+            --gold:       #4A7CA3;
+            --gold-d:     #3A6489;
             --light:      #F0F2F5;
             --white:      #FFFFFF;
             --muted:      #6B8BAD;
             --text-light: #CBD5E0;
             --text-mid:   #8899AA;
-            --border-g:   rgba(201,169,110,0.18);
+            --border-g:   rgba(74,124,163,0.18);
         }
 
         /* ===== TYPOGRAPHY ===== */
@@ -77,7 +77,7 @@
             border: none;
         }
         .btn-primary { background: var(--gold); color: var(--dark); }
-        .btn-primary:hover { background: var(--gold-d); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,169,110,0.28); }
+        .btn-primary:hover { background: var(--gold-d); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(74,124,163,0.28); }
         .btn-ghost { background: transparent; color: var(--white); border: 1.5px solid rgba(255,255,255,0.3); }
         .btn-ghost:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
         .btn-outline-dark { background: transparent; color: var(--dark); border: 1.5px solid rgba(14,17,23,0.3); }
@@ -176,7 +176,7 @@
             content: '';
             position: absolute; top: 0; right: 0;
             width: 42%; height: 100%;
-            background: linear-gradient(160deg, transparent 30%, rgba(201,169,110,0.07) 100%);
+            background: linear-gradient(160deg, transparent 30%, rgba(74,124,163,0.07) 100%);
         }
         .hero-inner {
             position: relative; z-index: 2;
@@ -263,7 +263,7 @@
         .service-num {
             font-family: 'Barlow Semi Condensed', sans-serif;
             font-size: 4.5rem; font-weight: 700;
-            color: rgba(201,169,110,0.1); line-height: 1;
+            color: rgba(74,124,163,0.12); line-height: 1;
             display: block; margin-bottom: 0.5rem;
         }
         .service-card h3 { color: var(--white); margin-bottom: 0.6rem; }
@@ -280,7 +280,7 @@
         .process-steps::before {
             content: ''; position: absolute;
             top: 2.4rem; left: 14%; right: 14%;
-            height: 1px; background: linear-gradient(to right, var(--gold), rgba(201,169,110,0.15));
+            height: 1px; background: linear-gradient(to right, var(--gold), rgba(74,124,163,0.15));
         }
         .process-step { padding: 0 1.5rem; text-align: center; }
         .step-num {
@@ -364,7 +364,7 @@
         .contact-info-item:first-child { padding-top: 0; }
         .ci-icon {
             width: 42px; height: 42px; flex-shrink: 0;
-            background: rgba(201,169,110,0.08);
+            background: rgba(74,124,163,0.08);
             border: 1px solid var(--border-g); border-radius: 2px;
             display: flex; align-items: center; justify-content: center;
             color: var(--gold);
