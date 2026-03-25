@@ -3,115 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zámečnictví Sova — Nerezová zábradlí na míru | Zlín</title>
-    <meta name="description" content="Zakázkové zámečnictví Marek Sova. Výroba a montáž nerezových i ocelových zábradlí, schodišť, bran a zámečnických výrobků. Zlín a okolí.">
+    <title>Zámečnictví Sova — Nerezová zábradlí na míru | Kunovice</title>
+    <meta name="description" content="Zakázkové zámečnictví Marek Sova. Výroba a montáž nerezových i ocelových zábradlí, schodišť, bran a zámečnických výrobků. Kunovice a okolí.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* ===== RESET & ROOT ===== */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html { overflow-x: hidden; scroll-behavior: smooth; }
-        body { overflow-x: hidden; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--dark); }
+        body { overflow-x: hidden; font-family: 'Lato', sans-serif; background: var(--bg); color: var(--dark); }
 
         :root {
-            --dark:       #1F2933;
-            --charcoal:   #2D3A45;
-            --accent:     #2B5C8A;
-            --accent-d:   #1E4568;
-            --bg:         #F3F4F6;
-            --mid:        #E4E9EE;
+            --dark:       #1A1714;
+            --charcoal:   #2C2825;
+            --accent:     #C17A3A;
+            --accent-d:   #9A5E28;
+            --accent-l:   #D9A876;
+            --bg:         #F5F2EE;
+            --mid:        #EAE6E0;
             --white:      #FFFFFF;
-            --slate:      #546E7A;
-            --text-body:  #374151;
-            --text-muted: #6B7280;
-            --border:     rgba(31,41,51,0.14);
-            --border-a:   rgba(43,92,138,0.18);
+            --slate:      #6B6055;
+            --text-body:  #3D3530;
+            --text-muted: #7A726A;
+            --border:     rgba(26,23,20,0.12);
+            --border-a:   rgba(193,122,58,0.2);
         }
 
-        /* ===== TYPOGRAPHY ===== */
-        h1, h2, h3, h4 { font-family: 'Barlow Semi Condensed', sans-serif; }
-        h1 { font-size: clamp(3rem, 8vw, 6.8rem); font-weight: 700; line-height: 1.0; }
+        h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; }
+        h1 { font-size: clamp(2.8rem, 5.5vw, 5rem); font-weight: 700; line-height: 1.05; letter-spacing: 0.01em; }
         h2 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 700; line-height: 1.1; letter-spacing: 0.01em; }
-        h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.2; }
+        h3 { font-size: 1.2rem; font-weight: 600; line-height: 1.2; }
         p  { font-size: 1rem; line-height: 1.75; }
 
-        /* ===== LAYOUT ===== */
         .container { max-width: 1160px; margin-inline: auto; padding-inline: 2rem; }
 
         .section-label {
-            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-family: 'Oswald', sans-serif;
             font-size: 0.7rem; font-weight: 600; letter-spacing: 0.24em;
             text-transform: uppercase; color: var(--accent);
             display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;
         }
-        .section-label::before {
-            content: ''; display: block; width: 32px; height: 2px;
-            background: var(--accent); flex-shrink: 0;
-        }
+        .section-label::before { content: ''; display: block; width: 32px; height: 2px; background: var(--accent); flex-shrink: 0; }
         .section-label.center { justify-content: center; }
-        /* light variant — na tmavém pozadí */
-        .section-label.light { color: rgba(255,255,255,0.6); }
-        .section-label.light::before { background: rgba(255,255,255,0.4); }
+        .section-label.light { color: rgba(255,255,255,0.55); }
+        .section-label.light::before { background: rgba(255,255,255,0.35); }
 
-        /* ===== BUTTONS ===== */
+        /* BUTTONS */
         .btn {
             display: inline-flex; align-items: center; gap: 0.5rem;
-            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-family: 'Oswald', sans-serif;
             font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em;
             text-transform: uppercase; text-decoration: none;
             padding: 0.9rem 2.2rem; border-radius: 2px;
             transition: all 0.25s ease; cursor: pointer; border: none;
         }
         .btn-primary { background: var(--accent); color: var(--white); }
-        .btn-primary:hover { background: var(--accent-d); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(43,92,138,0.3); }
+        .btn-primary:hover { background: var(--accent-d); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(193,122,58,0.3); }
         .btn-ghost { background: transparent; color: var(--white); border: 1.5px solid rgba(255,255,255,0.35); }
         .btn-ghost:hover { border-color: var(--white); background: rgba(255,255,255,0.08); transform: translateY(-2px); }
         .btn-outline { background: transparent; color: var(--dark); border: 1.5px solid var(--border); }
         .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
-        /* ===== ANIMATIONS ===== */
+        /* ANIMATIONS */
         .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.65s ease, transform 0.65s ease; }
         .fade-up.visible { opacity: 1; transform: translateY(0); }
-        .delay-1 { transition-delay: 0.1s; }
-        .delay-2 { transition-delay: 0.2s; }
-        .delay-3 { transition-delay: 0.3s; }
-        .delay-4 { transition-delay: 0.4s; }
+        .delay-1 { transition-delay: 0.1s; } .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; } .delay-4 { transition-delay: 0.4s; }
 
-        /* ===== NAV ===== */
+        /* NAV */
         .nav {
             position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-            padding: 1.5rem 0;
-            transition: background 0.35s, padding 0.35s, box-shadow 0.35s;
+            padding: 1.4rem 0; transition: background 0.35s, padding 0.35s, box-shadow 0.35s;
         }
         .nav.scrolled {
-            background: rgba(31,41,51,0.96);
-            backdrop-filter: blur(14px);
-            padding: 1rem 0;
-            box-shadow: 0 1px 0 rgba(255,255,255,0.06);
+            background: rgba(26,23,20,0.96); backdrop-filter: blur(14px);
+            padding: 0.9rem 0; box-shadow: 0 1px 0 rgba(255,255,255,0.06);
         }
         .nav-inner { display: flex; align-items: center; justify-content: space-between; }
         .nav-logo {
-            font-family: 'Barlow Semi Condensed', sans-serif;
-            font-size: 1.05rem; font-weight: 700; letter-spacing: 0.1em;
-            text-transform: uppercase; text-decoration: none; color: var(--white);
-            display: flex; align-items: center; gap: 0.75rem;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700; text-transform: uppercase; text-decoration: none;
+            display: flex; flex-direction: column; align-items: center;
+            line-height: 1; gap: 0.1rem;
         }
-        .nav-logo-mark {
-            width: 34px; height: 34px; background: var(--accent); border-radius: 2px;
-            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+        .nav-logo .logo-top {
+            font-size: 0.62rem; letter-spacing: 0.28em;
+            color: rgba(255,255,255,0.65);
         }
-        .nav-logo span { color: #90B8D8; }
+        .nav-logo .logo-bot {
+            font-size: 1.35rem; letter-spacing: 0.55em;
+            color: var(--accent-l); margin-right: -0.55em; /* kompenzace trailing space */
+        }
         .nav-links { display: flex; align-items: center; gap: 0.1rem; list-style: none; }
         .nav-links a {
-            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-family: 'Oswald', sans-serif;
             font-size: 0.77rem; font-weight: 600; letter-spacing: 0.14em;
             text-transform: uppercase; text-decoration: none;
-            color: rgba(255,255,255,0.72); padding: 0.5rem 0.9rem;
+            color: rgba(255,255,255,0.72); padding: 0.5rem 0.85rem;
             transition: color 0.2s; border-radius: 2px;
         }
         .nav-links a:hover { color: var(--white); }
-        .nav-cta { margin-left: 0.75rem; }
+        .nav-cta { margin-left: 0.5rem; }
         .nav-burger {
             display: none; flex-direction: column; gap: 5px;
             cursor: pointer; padding: 0.5rem; background: none; border: none;
@@ -120,162 +112,299 @@
         .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
         .nav-burger.open span:nth-child(2) { opacity: 0; }
         .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
-
-        /* Mobile menu */
         .nav-mobile {
             display: none; position: fixed; inset: 0; background: var(--dark); z-index: 99;
             flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem;
         }
         .nav-mobile.open { display: flex; }
         .nav-mobile a {
-            font-family: 'Barlow Semi Condensed', sans-serif;
-            font-size: 2rem; font-weight: 700; letter-spacing: 0.08em;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.8rem; font-weight: 700; letter-spacing: 0.08em;
             text-transform: uppercase; text-decoration: none; color: var(--white);
-            padding: 0.5rem 2rem; transition: color 0.2s;
+            padding: 0.4rem 2rem; transition: color 0.2s;
         }
-        .nav-mobile a:hover { color: #90B8D8; }
+        .nav-mobile a:hover { color: var(--accent-l); }
         .nav-mobile-x {
             position: absolute; top: 1.25rem; right: 1.5rem;
             background: none; border: none; color: var(--white);
             font-size: 2.2rem; line-height: 1; cursor: pointer;
         }
 
-        /* ===== HERO ===== */
+        /* HERO */
         .hero {
-            min-height: 100vh; background: var(--dark);
-            display: flex; align-items: center;
-            position: relative; overflow: hidden;
-            padding: 7rem 0 5rem;
-        }
-        .hero::before {
-            content: '';
-            position: absolute; top: 0; right: 0;
-            width: 46%; height: 100%;
-            background: var(--charcoal);
-            clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
-            opacity: 0.6;
+            background: var(--dark);
+            display: flex; flex-direction: column;
+            position: relative; overflow: hidden; min-height: 100vh;
         }
         .hero::after {
-            content: '';
-            position: absolute; top: 0; right: 0;
-            width: 42%; height: 100%;
-            background: linear-gradient(160deg, transparent 40%, rgba(43,92,138,0.12) 100%);
+            content: ''; position: absolute; inset: 0; pointer-events: none;
+            background-image: repeating-linear-gradient(
+                90deg,
+                rgba(193,122,58,0.06) 0px, rgba(193,122,58,0.06) 1px,
+                transparent 1px, transparent 80px
+            );
         }
-        .hero-inner {
-            position: relative; z-index: 2;
-            display: grid; grid-template-columns: 1fr 1fr;
-            gap: 4rem; align-items: center;
+        .hero-deco { display: none; }
+        .hero-main {
+            flex: 1; display: flex; align-items: center; justify-content: center;
+            padding: 4rem 0 2rem; position: relative; z-index: 2;
+            text-align: center;
         }
+        .hero-content { max-width: 820px; margin-inline: auto; }
         .hero-eyebrow {
-            font-family: 'Barlow Semi Condensed', sans-serif;
-            font-size: 0.7rem; font-weight: 600; letter-spacing: 0.24em;
-            text-transform: uppercase; color: #90B8D8;
-            display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.68rem; font-weight: 600; letter-spacing: 0.26em;
+            text-transform: uppercase; color: var(--accent-l);
+            display: flex; align-items: center; justify-content: center;
+            gap: 1rem; margin-bottom: 2rem;
         }
-        .hero-eyebrow::before { content: ''; display: block; width: 40px; height: 2px; background: #90B8D8; }
-        .hero h1 { color: var(--white); margin-bottom: 1.5rem; }
-        .hero h1 em { font-style: italic; color: #90B8D8; }
-        .hero-sub { color: rgba(255,255,255,0.6); font-size: 1.05rem; max-width: 420px; margin-bottom: 2.5rem; }
-        .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
-
-        .hero-stats {
-            display: grid; grid-template-columns: 1fr 1fr;
-            gap: 1.5px; background: rgba(255,255,255,0.06);
+        .hero-eyebrow::before,
+        .hero-eyebrow::after { content: ''; display: block; width: 36px; height: 1.5px; background: var(--accent-l); flex-shrink: 0; }
+        /* Brushed steel text */
+        @keyframes steel-shine {
+            0%   { background-position: 0% center; }
+            50%  { background-position: 100% center; }
+            100% { background-position: 0% center; }
         }
+        @keyframes copper-shine {
+            0%   { background-position: 0% center; }
+            50%  { background-position: 100% center; }
+            100% { background-position: 0% center; }
+        }
+        .hero h1 { margin-bottom: 1.2rem; }
+        .hero h1 .steel {
+            background: linear-gradient(
+                105deg,
+                #7c7c7c 0%, #c8c8c8 15%, #f2f2f2 28%,
+                #d0d0d0 40%, #a8a8a8 52%, #e8e8e8 64%,
+                #b8b8b8 76%, #f0f0f0 88%, #c4c4c4 100%
+            );
+            background-size: 250% auto;
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent; color: transparent;
+            animation: steel-shine 8s ease-in-out infinite;
+        }
+        .hero h1 .copper {
+            background: linear-gradient(
+                105deg,
+                #7a4515 0%, #c17a3a 18%, #eecc88 34%,
+                #c9893f 48%, #8b5020 62%, #d4943a 76%,
+                #f0c870 88%, #b87030 100%
+            );
+            background-size: 250% auto;
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent; color: transparent;
+            animation: copper-shine 8s ease-in-out infinite;
+            animation-delay: -2s;
+        }
+        .hero-rule {
+            width: 56px; height: 3px; background: var(--accent);
+            margin: 0 auto 1.8rem; border-radius: 2px;
+        }
+        .hero-sub {
+            color: rgba(255,255,255,0.55); font-size: 1rem; line-height: 1.8;
+            max-width: 520px; margin-inline: auto; margin-bottom: 2.8rem;
+        }
+        .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+        .hero-stats-bar {
+            position: relative; z-index: 2;
+            background: var(--charcoal);
+            border-top: 1px solid rgba(255,255,255,0.07);
+        }
+        .hero-stats-inner { display: flex; }
         .hero-stat {
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.07);
-            padding: 2rem 1.75rem; text-align: center;
+            flex: 1; padding: 2.2rem 3rem;
+            border-right: 1px solid rgba(255,255,255,0.07);
+            display: flex; align-items: center; justify-content: center; gap: 1.5rem;
         }
+        .hero-stat:last-child { border-right: none; }
         .hero-stat-num {
-            font-family: 'Barlow Semi Condensed', sans-serif;
-            font-size: 3rem; font-weight: 700; color: #90B8D8; line-height: 1; display: block;
+            font-family: 'Oswald', sans-serif;
+            font-size: 3.2rem; font-weight: 700; color: var(--accent-l); line-height: 1;
         }
-        .hero-stat-label { font-size: 0.77rem; color: rgba(255,255,255,0.4); margin-top: 0.4rem; }
+        .hero-stat-label { font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.5; }
 
-        .hero-scroll {
-            position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
-            z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
-            color: rgba(255,255,255,0.35); font-family: 'Barlow Semi Condensed', sans-serif;
-            font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase;
-            animation: bob 2.2s ease-in-out infinite;
-        }
-        @keyframes bob { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(7px)} }
-
-        /* ===== WHY ===== */
+        /* WHY */
         .why { background: var(--bg); padding: 6rem 0; }
         .why-header { text-align: center; max-width: 560px; margin-inline: auto; margin-bottom: 4rem; }
         .why-header h2 { color: var(--dark); }
-        .why-grid {
-            display: grid; grid-template-columns: repeat(4,1fr);
-            gap: 1.5px; background: var(--border);
-        }
+        .why-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.5px; background: var(--border); }
         .why-card {
             background: var(--white); padding: 2.5rem 2rem;
-            border-top: 3px solid transparent;
-            transition: border-color 0.3s, transform 0.3s;
+            border-top: 3px solid transparent; transition: border-color 0.3s, transform 0.3s;
         }
         .why-card:hover { border-top-color: var(--accent); transform: translateY(-4px); }
         .why-icon { width: 48px; height: 48px; color: var(--accent); margin-bottom: 1.5rem; }
         .why-card h3 { color: var(--dark); margin-bottom: 0.6rem; font-size: 1.1rem; }
         .why-card p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.7; }
 
-        /* ===== SERVICES ===== */
+        /* SERVICES */
         .services { background: var(--white); padding: 6rem 0; }
         .services-header { max-width: 600px; margin-bottom: 3.5rem; }
         .services-header h2 { color: var(--dark); }
         .services-header p { color: var(--slate); margin-top: 0.75rem; }
-        .services-grid {
-            display: grid; grid-template-columns: repeat(2,1fr);
-            gap: 1.5px; background: var(--border);
-        }
+        .services-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.5px; background: var(--border); }
         .service-card {
-            background: var(--bg);
-            border: 1px solid var(--mid);
-            padding: 3rem 2.5rem;
-            position: relative; overflow: hidden;
-            transition: background 0.3s, border-color 0.3s;
+            background: var(--bg); border: 1px solid var(--mid); padding: 3rem 2.5rem;
+            position: relative; overflow: hidden; transition: background 0.3s, border-color 0.3s;
         }
         .service-card::before {
             content: ''; position: absolute; top: 0; left: 0;
-            width: 3px; height: 0; background: var(--accent);
-            transition: height 0.4s ease;
+            width: 3px; height: 0; background: var(--accent); transition: height 0.4s ease;
         }
         .service-card:hover::before { height: 100%; }
         .service-card:hover { background: var(--mid); border-color: var(--border-a); }
         .service-num {
-            font-family: 'Barlow Semi Condensed', sans-serif;
-            font-size: 4.5rem; font-weight: 700;
-            color: rgba(43,92,138,0.1); line-height: 1;
-            display: block; margin-bottom: 0.5rem;
+            font-family: 'Oswald', sans-serif;
+            font-size: 4.5rem; font-weight: 700; color: rgba(193,122,58,0.1);
+            line-height: 1; display: block; margin-bottom: 0.5rem;
         }
         .service-card h3 { color: var(--dark); margin-bottom: 0.6rem; }
         .service-card p { color: var(--slate); font-size: 0.88rem; line-height: 1.7; }
 
-        /* ===== PROCESS ===== */
+        /* REALIZACE */
+        .realizace { background: var(--bg); padding: 6rem 0; }
+        .realizace-header { text-align: center; max-width: 560px; margin-inline: auto; margin-bottom: 3rem; }
+        .realizace-header h2 { color: var(--dark); }
+        .realizace-header p { color: var(--slate); margin-top: 0.75rem; }
+
+        .filter-bar {
+            display: flex; flex-wrap: wrap; gap: 0.5rem;
+            justify-content: center; margin-bottom: 3rem;
+        }
+        .filter-btn {
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em;
+            text-transform: uppercase; padding: 0.55rem 1.3rem;
+            border: 1.5px solid var(--border); border-radius: 2px;
+            background: var(--white); color: var(--slate);
+            cursor: pointer; transition: all 0.2s;
+        }
+        .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+        .filter-btn.active { background: var(--accent); border-color: var(--accent); color: var(--white); }
+
+        .projects-grid {
+            display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem;
+        }
+        .project-card {
+            background: var(--white); border-radius: 2px;
+            overflow: hidden; cursor: pointer;
+            border: 1px solid var(--mid);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(26,23,20,0.12); }
+        .project-card.hidden { display: none; }
+
+        .project-thumb {
+            position: relative; overflow: hidden; aspect-ratio: 4/3;
+            background: var(--mid);
+        }
+        .project-thumb img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.5s ease;
+            display: block;
+        }
+        .project-card:hover .project-thumb img { transform: scale(1.06); }
+        .project-overlay {
+            position: absolute; inset: 0;
+            background: rgba(26,23,20,0.55);
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.3s;
+        }
+        .project-card:hover .project-overlay { opacity: 1; }
+        .project-overlay span {
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.78rem; font-weight: 600; letter-spacing: 0.16em;
+            text-transform: uppercase; color: var(--white);
+            border: 1.5px solid rgba(255,255,255,0.6);
+            padding: 0.6rem 1.4rem; border-radius: 2px;
+        }
+        .project-info { padding: 1.25rem 1.5rem 1.5rem; }
+        .project-cat {
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.65rem; font-weight: 600; letter-spacing: 0.18em;
+            text-transform: uppercase; color: var(--accent);
+            display: block; margin-bottom: 0.35rem;
+        }
+        .project-info h3 { color: var(--dark); font-size: 1rem; margin-bottom: 0.3rem; }
+        .project-info p { color: var(--text-muted); font-size: 0.82rem; line-height: 1.5; }
+
+        /* LIGHTBOX */
+        .lightbox {
+            display: none; position: fixed; inset: 0; z-index: 200;
+            background: rgba(15,19,25,0.95); backdrop-filter: blur(6px);
+            align-items: center; justify-content: center;
+        }
+        .lightbox.open { display: flex; }
+        .lb-img-wrap {
+            max-width: 88vw; max-height: 82vh;
+            display: flex; align-items: center; justify-content: center;
+            position: relative;
+        }
+        .lb-img { max-width: 88vw; max-height: 82vh; object-fit: contain; border-radius: 2px; }
+        .lb-close {
+            position: absolute; top: 1.5rem; right: 1.5rem;
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+            color: var(--white); font-size: 1.6rem; line-height: 1;
+            width: 44px; height: 44px; border-radius: 2px;
+            cursor: pointer; display: flex; align-items: center; justify-content: center;
+            transition: background 0.2s;
+        }
+        .lb-close:hover { background: rgba(255,255,255,0.2); }
+        .lb-prev, .lb-next {
+            position: absolute; top: 50%; transform: translateY(-50%);
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+            color: var(--white); font-size: 2rem; line-height: 1;
+            width: 52px; height: 52px; border-radius: 2px;
+            cursor: pointer; display: flex; align-items: center; justify-content: center;
+            transition: background 0.2s;
+        }
+        .lb-prev:hover, .lb-next:hover { background: rgba(255,255,255,0.2); }
+        .lb-prev { left: 1.5rem; }
+        .lb-next { right: 1.5rem; }
+        .lb-counter {
+            position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.75rem; font-weight: 600; letter-spacing: 0.16em;
+            color: rgba(255,255,255,0.5); text-transform: uppercase;
+        }
+        .lb-title {
+            position: absolute; bottom: 3.5rem; left: 50%; transform: translateX(-50%);
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.9rem; font-weight: 600; letter-spacing: 0.08em;
+            color: rgba(255,255,255,0.75); white-space: nowrap;
+        }
+        .lb-spinner {
+            position: absolute; width: 32px; height: 32px;
+            border: 2px solid rgba(255,255,255,0.15);
+            border-top-color: var(--accent-l); border-radius: 50%;
+            animation: spin 0.7s linear infinite; display: none;
+        }
+        .lb-img-wrap.loading .lb-spinner { display: block; }
+        .lb-img-wrap.loading .lb-img { opacity: 0; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* PROCESS */
         .process { background: var(--dark); padding: 6rem 0; }
         .process-header { text-align: center; max-width: 560px; margin-inline: auto; margin-bottom: 4rem; }
         .process-header h2 { color: var(--white); }
         .process-steps { display: grid; grid-template-columns: repeat(4,1fr); position: relative; }
         .process-steps::before {
-            content: ''; position: absolute;
-            top: 2.4rem; left: 14%; right: 14%;
-            height: 1px; background: linear-gradient(to right, rgba(144,184,216,0.5), rgba(144,184,216,0.1));
+            content: ''; position: absolute; top: 2.4rem; left: 14%; right: 14%;
+            height: 1px; background: linear-gradient(to right, rgba(217,168,118,0.5), rgba(217,168,118,0.1));
         }
         .process-step { padding: 0 1.5rem; text-align: center; }
         .step-num {
             width: 4.8rem; height: 4.8rem;
-            background: var(--charcoal); border: 2px solid rgba(144,184,216,0.4); border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            margin: 0 auto 1.5rem;
-            font-family: 'Barlow Semi Condensed', sans-serif;
-            font-size: 1.4rem; font-weight: 700; color: #90B8D8;
-            position: relative; z-index: 1;
+            background: var(--charcoal); border: 2px solid rgba(217,168,118,0.4); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.4rem; font-weight: 700; color: var(--accent-l); position: relative; z-index: 1;
         }
         .process-step h3 { color: var(--white); margin-bottom: 0.5rem; font-size: 1.05rem; }
         .process-step p { color: rgba(255,255,255,0.45); font-size: 0.85rem; }
 
-        /* ===== ABOUT ===== */
+        /* ABOUT */
         .about { background: var(--bg); padding: 6rem 0; }
         .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
         .about-visual { position: relative; }
@@ -284,19 +413,17 @@
             display: flex; align-items: center; justify-content: center;
             border: 1px solid var(--border);
         }
-        .about-visual-main svg { color: var(--accent); opacity: 0.3; }
+        .about-visual-main svg { color: var(--accent); opacity: 0.25; }
         .about-visual::after {
-            content: ''; position: absolute;
-            bottom: -1.5rem; right: -1.5rem;
+            content: ''; position: absolute; bottom: -1.5rem; right: -1.5rem;
             width: 55%; height: 55%;
-            border: 2px solid var(--accent); border-radius: 2px;
-            z-index: -1; opacity: 0.25;
+            border: 2px solid var(--accent); border-radius: 2px; z-index: -1; opacity: 0.22;
         }
         .about-badge {
             position: absolute; bottom: -1.5rem; left: 2rem;
             background: var(--accent); color: var(--white);
             padding: 1rem 1.5rem; border-radius: 2px;
-            font-family: 'Barlow Semi Condensed', sans-serif; font-weight: 700;
+            font-family: 'Oswald', sans-serif; font-weight: 700;
         }
         .about-badge-num { font-size: 2.2rem; line-height: 1; display: block; }
         .about-badge-label { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.8; }
@@ -304,38 +431,34 @@
         .about-content p { color: var(--text-body); margin-bottom: 1rem; }
         .about-content .btn { margin-top: 1.5rem; }
 
-        /* ===== CONTACT ===== */
+        /* CONTACT */
         .contact { background: var(--mid); padding: 6rem 0; }
         .contact-header { text-align: center; max-width: 520px; margin-inline: auto; margin-bottom: 4rem; }
         .contact-header h2 { color: var(--dark); }
         .contact-header p { color: var(--slate); margin-top: 0.6rem; }
         .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
-
         .form-group { margin-bottom: 1.25rem; }
         .form-group label {
-            display: block;
-            font-family: 'Barlow Semi Condensed', sans-serif;
+            display: block; font-family: 'Oswald', sans-serif;
             font-size: 0.68rem; font-weight: 600; letter-spacing: 0.16em;
             text-transform: uppercase; color: var(--slate); margin-bottom: 0.5rem;
         }
         .form-group input,
         .form-group textarea,
         .form-group select {
-            width: 100%; background: var(--white);
-            border: 1px solid var(--border); color: var(--dark);
-            padding: 0.875rem 1.1rem; border-radius: 2px;
-            font-family: 'Inter', sans-serif; font-size: 0.9rem;
-            transition: border-color 0.2s; outline: none; appearance: none;
+            width: 100%; background: var(--white); border: 1px solid var(--border);
+            color: var(--dark); padding: 0.875rem 1.1rem; border-radius: 2px;
+            font-family: 'Lato', sans-serif; font-size: 0.9rem;
+            transition: border-color 0.2s, box-shadow 0.2s; outline: none; appearance: none;
         }
         .form-group input::placeholder,
         .form-group textarea::placeholder { color: var(--text-muted); }
         .form-group input:focus,
         .form-group textarea:focus,
-        .form-group select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(43,92,138,0.08); }
+        .form-group select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(193,122,58,0.08); }
         .form-group textarea { min-height: 120px; resize: vertical; }
         .form-group select option { background: var(--white); color: var(--dark); }
         .form-submit { width: 100%; justify-content: center; }
-
         .contact-info-list { display: flex; flex-direction: column; }
         .contact-info-item {
             display: flex; gap: 1.2rem; align-items: flex-start;
@@ -345,57 +468,57 @@
         .ci-icon {
             width: 42px; height: 42px; flex-shrink: 0;
             background: var(--white); border: 1px solid var(--border); border-radius: 2px;
-            display: flex; align-items: center; justify-content: center;
-            color: var(--accent);
+            display: flex; align-items: center; justify-content: center; color: var(--accent);
         }
         .ci-label {
-            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-family: 'Oswald', sans-serif;
             font-size: 0.66rem; font-weight: 600; letter-spacing: 0.16em;
-            text-transform: uppercase; color: var(--slate);
-            display: block; margin-bottom: 0.2rem;
+            text-transform: uppercase; color: var(--slate); display: block; margin-bottom: 0.2rem;
         }
         .ci-value { color: var(--dark); font-size: 0.95rem; text-decoration: none; transition: color 0.2s; }
         a.ci-value:hover { color: var(--accent); }
 
-        /* ===== FOOTER ===== */
+        /* FOOTER */
         .footer {
-            background: var(--dark);
-            border-top: 1px solid rgba(255,255,255,0.06);
-            padding: 2rem 0;
+            background: var(--dark); border-top: 1px solid rgba(255,255,255,0.06); padding: 2rem 0;
         }
         .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
         .footer-brand {
-            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-family: 'Oswald', sans-serif;
             font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em;
             text-transform: uppercase; color: rgba(255,255,255,0.4);
         }
-        .footer-brand span { color: #90B8D8; }
+        .footer-brand span { color: var(--accent-l); }
         .footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.3); }
         .footer-nav { display: flex; gap: 1.5rem; list-style: none; }
         .footer-nav a {
-            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-family: 'Oswald', sans-serif;
             font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em;
             text-transform: uppercase; text-decoration: none;
             color: rgba(255,255,255,0.35); transition: color 0.2s;
         }
         .footer-nav a:hover { color: var(--white); }
+        .footer-social { display: flex; gap: 1rem; }
+        .footer-social a { color: rgba(255,255,255,0.4); transition: color .2s; }
+        .footer-social a:hover { color: var(--white); }
 
-        /* ===== RESPONSIVE ===== */
+        /* RESPONSIVE */
         @media (max-width: 1024px) {
             .why-grid { grid-template-columns: repeat(2,1fr); }
             .process-steps { grid-template-columns: repeat(2,1fr); gap: 2.5rem; }
             .process-steps::before { display: none; }
+            .projects-grid { grid-template-columns: repeat(2,1fr); }
         }
         @media (max-width: 768px) {
-            .hero-inner { grid-template-columns: 1fr; }
-            .hero-stats { grid-template-columns: repeat(4,1fr); }
-            .hero-stat { padding: 1.2rem 0.5rem; }
-            .hero-stat-num { font-size: 2rem; }
+            .hero-deco { opacity: 0.03; }
+            .hero-stat { padding: 1.5rem 1.5rem; gap: 1rem; }
+            .hero-stat-num { font-size: 2.4rem; }
             .about-inner { grid-template-columns: 1fr; }
             .about-visual { display: none; }
             .contact-inner { grid-template-columns: 1fr; }
             .footer-inner { flex-direction: column; text-align: center; }
             .footer-nav { display: none; }
+            .lb-prev { left: 0.75rem; } .lb-next { right: 0.75rem; }
         }
         @media (max-width: 600px) {
             .nav-links, .nav-cta { display: none; }
@@ -403,8 +526,11 @@
             .why-grid { grid-template-columns: 1fr; }
             .services-grid { grid-template-columns: 1fr; }
             .process-steps { grid-template-columns: 1fr; gap: 2rem; }
-            .hero-stats { grid-template-columns: repeat(2,1fr); }
+            .hero-stat { padding: 1.2rem 1rem; gap: 0.75rem; }
             h1 { font-size: clamp(2.6rem, 10vw, 3.5rem); }
+            .projects-grid { grid-template-columns: 1fr; }
+            .filter-bar { gap: 0.4rem; }
+            .filter-btn { font-size: 0.7rem; padding: 0.5rem 1rem; }
         }
     </style>
 </head>
@@ -415,17 +541,13 @@
     <div class="container">
         <div class="nav-inner">
             <a href="#" class="nav-logo">
-                <div class="nav-logo-mark">
-                    <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round">
-                        <path d="M2 18L10 2L18 18"/><path d="M5 12H15"/>
-                    </svg>
-                </div>
-                ZÁMEČNICTVÍ&nbsp;<span>SOVA</span>
+                <span class="logo-top">Zámečnictví</span>
+                <span class="logo-bot">Sova</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#proc-nas">Proč nás</a></li>
                 <li><a href="#sluzby">Služby</a></li>
-                <li><a href="#postup">Postup</a></li>
+                <li><a href="#realizace">Realizace</a></li>
                 <li><a href="#o-nas">O nás</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
@@ -442,7 +564,7 @@
     <button class="nav-mobile-x" id="mobileClose">×</button>
     <a href="#proc-nas" class="mob-link">Proč nás</a>
     <a href="#sluzby" class="mob-link">Služby</a>
-    <a href="#postup" class="mob-link">Postup</a>
+    <a href="#realizace" class="mob-link">Realizace</a>
     <a href="#o-nas" class="mob-link">O nás</a>
     <a href="#kontakt" class="mob-link">Kontakt</a>
     <a href="#kontakt" class="btn btn-primary" style="margin-top:1.5rem">Poptávka</a>
@@ -450,44 +572,67 @@
 
 <!-- HERO -->
 <section class="hero" id="hero">
-    <div class="container">
-        <div class="hero-inner">
+    <!-- Dekorativní SVG zábradlí -->
+    <div class="hero-deco" aria-hidden="true">
+        <svg viewBox="0 0 1440 700" fill="none" stroke="currentColor" stroke-linecap="round" preserveAspectRatio="xMidYMid slice">
+            <!-- Horní madlo -->
+            <rect x="0" y="180" width="1440" height="12" rx="4"/>
+            <!-- Spodní madlo -->
+            <rect x="0" y="520" width="1440" height="12" rx="4"/>
+            <!-- Střední prut -->
+            <rect x="0" y="348" width="1440" height="7" rx="3"/>
+            <!-- Svislé pruty každých 72px -->
+            <rect x="36"   y="193" width="7" height="327" rx="3"/>
+            <rect x="108"  y="193" width="7" height="327" rx="3"/>
+            <rect x="180"  y="193" width="7" height="327" rx="3"/>
+            <rect x="252"  y="193" width="7" height="327" rx="3"/>
+            <rect x="324"  y="193" width="7" height="327" rx="3"/>
+            <rect x="396"  y="193" width="7" height="327" rx="3"/>
+            <rect x="468"  y="193" width="7" height="327" rx="3"/>
+            <rect x="540"  y="193" width="7" height="327" rx="3"/>
+            <rect x="612"  y="193" width="7" height="327" rx="3"/>
+            <rect x="684"  y="193" width="7" height="327" rx="3"/>
+            <rect x="756"  y="193" width="7" height="327" rx="3"/>
+            <rect x="828"  y="193" width="7" height="327" rx="3"/>
+            <rect x="900"  y="193" width="7" height="327" rx="3"/>
+            <rect x="972"  y="193" width="7" height="327" rx="3"/>
+            <rect x="1044" y="193" width="7" height="327" rx="3"/>
+            <rect x="1116" y="193" width="7" height="327" rx="3"/>
+            <rect x="1188" y="193" width="7" height="327" rx="3"/>
+            <rect x="1260" y="193" width="7" height="327" rx="3"/>
+            <rect x="1332" y="193" width="7" height="327" rx="3"/>
+            <rect x="1404" y="193" width="7" height="327" rx="3"/>
+        </svg>
+    </div>
+    <!-- Hlavní obsah -->
+    <div class="hero-main">
+        <div class="container">
             <div class="hero-content">
-                <div class="hero-eyebrow">Zakázkové zámečnictví · Zlín a okolí</div>
-                <h1>Nerezová<br><em>zábradlí</em><br>na míru</h1>
-                <p class="hero-sub">Vyrábíme a montujeme nerezová i ocelová zábradlí, schodiště, brány a kovové konstrukce. Každý projekt řešíme individuálně.</p>
+                <div class="hero-eyebrow">Zakázkové zámečnictví · Kunovice a okolí</div>
+                <h1><span class="steel">Nerezová zábradlí</span><br><span class="copper">na míru</span></h1>
+                <div class="hero-rule"></div>
+                <p class="hero-sub">Vyrábíme a montujeme nerezová i ocelová zábradlí, schodiště, brány a vchodové stříšky. Každý projekt řešíme individuálně.</p>
                 <div class="hero-actions">
                     <a href="#kontakt" class="btn btn-primary">Nezávazná poptávka</a>
-                    <a href="#sluzby" class="btn btn-ghost">Naše služby</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <span class="hero-stat-num">15+</span>
-                        <div class="hero-stat-label">let zkušeností</div>
-                    </div>
-                    <div class="hero-stat">
-                        <span class="hero-stat-num">500+</span>
-                        <div class="hero-stat-label">realizací</div>
-                    </div>
-                    <div class="hero-stat">
-                        <span class="hero-stat-num">100%</span>
-                        <div class="hero-stat-label">vlastní výroba</div>
-                    </div>
-                    <div class="hero-stat">
-                        <span class="hero-stat-num">ZL</span>
-                        <div class="hero-stat-label">Zlínský kraj</div>
-                    </div>
+                    <a href="#realizace" class="btn btn-ghost">Naše realizace</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="hero-scroll">
-        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-            <path d="M7 3v16M2 14l5 5 5-5"/>
-        </svg>
-        Scroll
+    <!-- Stats pruh dole -->
+    <div class="hero-stats-bar">
+        <div class="container">
+            <div class="hero-stats-inner">
+                <div class="hero-stat">
+                    <span class="hero-stat-num">15+</span>
+                    <div class="hero-stat-label">let zkušeností<br>v oboru</div>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-num">100%</span>
+                    <div class="hero-stat-label">vlastní výroba<br>v dílně</div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -496,40 +641,28 @@
     <div class="container">
         <div class="why-header fade-up">
             <div class="section-label center">Proč si vybrat nás</div>
-            <h2>Přesnost, kvalita<br>a spolehlivost</h2>
+            <h2>Přesnost, kvalita a spolehlivost</h2>
         </div>
         <div class="why-grid">
             <div class="why-card fade-up delay-1">
-                <svg class="why-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="8" y="20" width="32" height="22" rx="1"/>
-                    <path d="M16 20V16a8 8 0 0116 0v4"/>
-                    <circle cx="24" cy="32" r="3"/>
-                </svg>
+                <svg class="why-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="20" width="32" height="22" rx="1"/><path d="M16 20V16a8 8 0 0116 0v4"/><circle cx="24" cy="32" r="3"/></svg>
                 <h3>Vlastní výroba</h3>
-                <p>Vše vyrábíme ve vlastní dílně. Máme plnou kontrolu nad kvalitou každého svaru a každého detailu od návrhu po montáž.</p>
+                <p>Vyrábíme ve vlastní dílně. Máme plnou kontrolu nad kvalitou od návrhu po montáž. Rychlá reakce na individuální požadavky.</p>
             </div>
             <div class="why-card fade-up delay-2">
-                <svg class="why-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M24 6l4 9 10 1.5-7 7 1.7 10L24 29l-8.7 4.5 1.7-10-7-7L20 15z"/>
-                    <path d="M6 42h36"/>
-                </svg>
-                <h3>Prémiový materiál</h3>
-                <p>Pracujeme výhradně s kvalitní nerezovou ocelí. Výsledek je odolný, hygienický a estetický po celá desetiletí.</p>
+                <svg class="why-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l4 9 10 1.5-7 7 1.7 10L24 29l-8.7 4.5 1.7-10-7-7L20 15z"/><path d="M6 42h36"/></svg>
+                <h3>Kvalita zpracování</h3>
+                <p>Prémiová nerezová ocel v leštěném nebo kartáčovaném provedení. Výsledek slouží desítky let bez složité údržby.</p>
             </div>
             <div class="why-card fade-up delay-3">
-                <svg class="why-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M10 38V22L24 10l14 12v16H30V28H18v10z"/>
-                </svg>
+                <svg class="why-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38V22L24 10l14 12v16H30V28H18v10z"/></svg>
                 <h3>Individuální přístup</h3>
-                <p>Každý projekt řešíme na míru. Přijedeme, zaměříme a navrhneme optimální řešení přímo pro váš prostor a potřeby.</p>
+                <p>Přijedeme na místo, zaměříme a navrhneme optimální řešení. Typová provedení i zakázky dle vlastního návrhu zákazníka.</p>
             </div>
             <div class="why-card fade-up delay-4">
-                <svg class="why-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="24" cy="24" r="18"/>
-                    <path d="M24 14v10l7 4"/>
-                </svg>
-                <h3>Dodržení termínů</h3>
-                <p>Dohodnutý termín je pro nás závazek. Pracujeme efektivně a transparentně — od poptávky po finální montáž.</p>
+                <svg class="why-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M24 14v10l7 4"/></svg>
+                <h3>Dlouholeté zkušenosti</h3>
+                <p>Více než 15 let realizací nerezových a ocelových zábradlí po celém Zlínském kraji i mimo něj.</p>
             </div>
         </div>
     </div>
@@ -541,38 +674,344 @@
         <div class="services-header fade-up">
             <div class="section-label">Co děláme</div>
             <h2>Naše služby</h2>
-            <p>Specializujeme se na výrobu a montáž všech typů nerezových a ocelových zábradlí a kovových výrobků na zakázku.</p>
+            <p>Specializujeme se na výrobu a montáž všech typů nerezových a ocelových zábradlí a příbuzných kovových výrobků na zakázku.</p>
         </div>
         <div class="services-grid">
             <div class="service-card fade-up delay-1">
                 <span class="service-num">01</span>
                 <h3>Vnitřní zábradlí</h3>
-                <p>Schodišťová, balkonová i parapetní nerezová zábradlí pro interiéry. Kombinujeme nerez se dřevem, sklem nebo lanem pro moderní výsledek.</p>
+                <p>Nerezové zábradlí v leštěném nebo kartáčovaném provedení. Schodišťová, balkonová i parapetní. Kombinace s dřevěným madlem nebo skleněnou výplní dle přání zákazníka.</p>
             </div>
             <div class="service-card fade-up delay-2">
                 <span class="service-num">02</span>
                 <h3>Venkovní zábradlí</h3>
-                <p>Terasy, balkony, vstupní schodiště. Odolné nerezové konstrukce navržené pro exteriér — odolné povětrnostním podmínkám bez rez.</p>
+                <p>Celonerezové provedení z trubkových nebo hranatých profilů — odolné vůči povětrnosti bez nutnosti údržby. Výplně: sklo, ocelová lanka nebo nerezové pruty. Terasy, balkony, schodiště.</p>
             </div>
             <div class="service-card fade-up delay-3">
                 <span class="service-num">03</span>
                 <h3>Ocelové výrobky</h3>
-                <p>Brány, ploty, oplocení, schůdky a zakázkové zámečnické výrobky z oceli i nerezu dle přesného zadání zákazníka.</p>
+                <p>Brány, ploty, oplocení, schůdky a další zakázkové zámečnické výrobky z oceli. Povrchová úprava dle požadavku. Kombinace s nerezem nebo dřevem.</p>
             </div>
             <div class="service-card fade-up delay-4">
                 <span class="service-num">04</span>
-                <h3>Práce ve výšce</h3>
-                <p>Montáž zábradlí a kovových konstrukcí ve výšce. Disponujeme potřebným vybavením i certifikovanými pracovníky pro bezpečnou realizaci.</p>
+                <h3>Přístřešky a stříšky</h3>
+                <p>Zastřešení vchodového prostoru z kovové konstrukce s výplní z polykarbonátu (čiré, kouřové nebo barevné provedení). Moderní a praktická ochrana před nepřízní počasí.</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- REALIZACE -->
+<section class="realizace" id="realizace">
+    <div class="container">
+        <div class="realizace-header fade-up">
+            <div class="section-label center">Co jsme realizovali</div>
+            <h2>Naše projekty</h2>
+            <p>Ukázka dokončených realizací. Kliknutím na projekt zobrazíte fotogalerii.</p>
+        </div>
+
+        <div class="filter-bar fade-up delay-1">
+            <button class="filter-btn active" data-filter="all">Vše</button>
+            <button class="filter-btn" data-filter="vnitrni">Vnitřní zábradlí</button>
+            <button class="filter-btn" data-filter="venkovni">Venkovní zábradlí</button>
+            <button class="filter-btn" data-filter="ocelove">Ocelové výrobky</button>
+            <button class="filter-btn" data-filter="strisky">Přístřešky a stříšky</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+            <!-- VNITŘNÍ ZÁBRADLÍ -->
+            <div class="project-card fade-up" data-cat="vnitrni"
+                 data-title="Nerezové zábradlí ABB Brno"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/abb-brno/img/big/DSCN0028.JPG","https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/abb-brno/img/big/DSCN0034.JPG","https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/abb-brno/img/big/DSCN0038.JPG","https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/abb-brno/img/big/DSCN0040.JPG","https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/abb-brno/img/big/DSCN0043.JPG"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/abb-brno/img/big/DSCN0028.JPG" alt="Nerezové zábradlí ABB Brno" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit album (5 fotek)</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Vnitřní zábradlí</span>
+                    <h3>Nerezové zábradlí ABB Brno</h3>
+                    <p>Zábradlí na schodiště a ochozy v leštěném nerezi s prutovou výplní</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up delay-1" data-cat="vnitrni"
+                 data-title="RD Roštín"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-rostin/img/big/IMG_20191119_110623.jpg","https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-rostin/img/big/IMG_20191119_111131.jpg","https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-rostin/img/big/IMG_20191119_111324.jpg","https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-rostin/img/big/IMG_20191119_111535.jpg","https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-rostin/img/big/IMG_20191119_111755.jpg"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-rostin/img/big/IMG_20191119_110623.jpg" alt="RD Roštín" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit album (5 fotek)</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Vnitřní zábradlí</span>
+                    <h3>RD Roštín</h3>
+                    <p>Schodiště a ochozy v kartáčovaném nerezu se skleněnou výplní</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up delay-2" data-cat="vnitrni"
+                 data-title="RD Veselí nad Moravou"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-veseli-nad-moravou/img/big/DSC_0128.JPG"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-veseli-nad-moravou/img/big/DSC_0128.JPG" alt="RD Veselí nad Moravou" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit foto</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Vnitřní zábradlí</span>
+                    <h3>RD Veselí nad Moravou</h3>
+                    <p>Kartáčovaný nerez se skleněnou výplní</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-cat="vnitrni"
+                 data-title="RD Strání"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-strani/img/big/P2090012.JPG"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-strani/img/big/P2090012.JPG" alt="RD Strání" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit foto</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Vnitřní zábradlí</span>
+                    <h3>RD Strání</h3>
+                    <p>Ocelové zábradlí na schodiště</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up delay-1" data-cat="vnitrni"
+                 data-title="RD Dolní Kounice"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-dolni-kounice-pravlov/img/big/DSC_0303.JPG"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-dolni-kounice-pravlov/img/big/DSC_0303.JPG" alt="RD Dolní Kounice" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit foto</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Vnitřní zábradlí</span>
+                    <h3>RD Dolní Kounice</h3>
+                    <p>Nerezové zábradlí na schodiště</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up delay-2" data-cat="vnitrni"
+                 data-title="RD Domanín"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-domanin/img/big/DSC_0124.JPG"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-domanin/img/big/DSC_0124.JPG" alt="RD Domanín" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit foto</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Vnitřní zábradlí</span>
+                    <h3>RD Domanín</h3>
+                    <p>Nerezové zábradlí — vnitřní schodiště</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-cat="vnitrni"
+                 data-title="RD Spytihněv"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-spytihnev/img/big/DSC_0129.JPG"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/vnitrni-zabradli/rd-spytihnev/img/big/DSC_0129.JPG" alt="RD Spytihněv" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit foto</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Vnitřní zábradlí</span>
+                    <h3>RD Spytihněv</h3>
+                    <p>Nerezové zábradlí — vnitřní schodiště</p>
+                </div>
+            </div>
+
+            <!-- VENKOVNÍ ZÁBRADLÍ -->
+            <div class="project-card fade-up delay-1" data-cat="venkovni"
+                 data-title="Areál Rybníček Blatnice"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/areal-rybnicek-blatnice-pod-sv-antoninkem/img/big/IMG_20190904_091607.jpg","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/areal-rybnicek-blatnice-pod-sv-antoninkem/img/big/IMG_20190904_091728.jpg","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/areal-rybnicek-blatnice-pod-sv-antoninkem/img/big/IMG_20190904_091752.jpg","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/areal-rybnicek-blatnice-pod-sv-antoninkem/img/big/IMG_20190904_091806.jpg","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/areal-rybnicek-blatnice-pod-sv-antoninkem/img/big/IMG_20190904_092354.jpg","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/areal-rybnicek-blatnice-pod-sv-antoninkem/img/big/IMG_20190904_092556.jpg"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/areal-rybnicek-blatnice-pod-sv-antoninkem/img/big/IMG_20190904_092556.jpg" alt="Areál Rybníček Blatnice" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit album (6 fotek)</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Venkovní zábradlí</span>
+                    <h3>Areál Rybníček Blatnice</h3>
+                    <p>Realizace nerezového zábradlí v areálu Rybníček pod sv. Antonínkem</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up delay-2" data-cat="venkovni"
+                 data-title="RD Modrá"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-modra/img/big/IMG_20191204_102203.jpg","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-modra/img/big/IMG_20191204_115730.jpg","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-modra/img/big/IMG_20191204_115754.jpg","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-modra/img/big/IMG_20191204_115824.jpg","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-modra/img/big/IMG_20191204_115848.jpg"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-modra/img/big/IMG_20191204_115754.jpg" alt="RD Modrá" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit album (5 fotek)</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Venkovní zábradlí</span>
+                    <h3>RD Modrá</h3>
+                    <p>Nerezové zábradlí na balkony rodinného domu</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-cat="venkovni"
+                 data-title="RD Praha"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-praha/img/big/IMG_20170902_132911.jpg","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-praha/img/big/IMG_20170902_133208.jpg","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-praha/img/big/IMG_20170902_133359.jpg"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-praha/img/big/IMG_20170902_132911.jpg" alt="RD Praha" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit album (3 fotky)</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Venkovní zábradlí</span>
+                    <h3>RD Praha</h3>
+                    <p>Nerezové zábradlí na balkony v Praze</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up delay-1" data-cat="venkovni"
+                 data-title="RD Zborovice"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-zborovice/img/big/DSC_0336.JPG","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-zborovice/img/big/DSC_0338.JPG","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-zborovice/img/big/DSC_0339.JPG"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-zborovice/img/big/DSC_0336.JPG" alt="RD Zborovice" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit album (3 fotky)</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Venkovní zábradlí</span>
+                    <h3>RD Zborovice</h3>
+                    <p>Nerezové zábradlí na balkon</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up delay-2" data-cat="venkovni"
+                 data-title="RD Uherské Hradiště"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-uh-hradiste/img/big/DSC_0285.JPG"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-uh-hradiste/img/big/DSC_0285.JPG" alt="RD Uherské Hradiště" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit foto</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Venkovní zábradlí</span>
+                    <h3>RD Uherské Hradiště</h3>
+                    <p>Nerezové zábradlí exteriér</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-cat="venkovni"
+                 data-title="Bytový dům Brno"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/bytovy-dum-brno/img/big/DSC_0043.JPG","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/bytovy-dum-brno/img/big/DSC_0046.JPG","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/bytovy-dum-brno/img/big/DSC_0055.JPG","https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/bytovy-dum-brno/img/big/DSC_0064.JPG"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/bytovy-dum-brno/img/big/DSC_0043.JPG" alt="Bytový dům Brno" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit album (4 fotky)</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Venkovní zábradlí</span>
+                    <h3>Bytový dům Brno</h3>
+                    <p>Nerezové zábradlí — bytový dům</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up delay-1" data-cat="venkovni"
+                 data-title="RD Popovice"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-popovice/img/big/P6170006.JPG"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-popovice/img/big/P6170006.JPG" alt="RD Popovice" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit foto</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Venkovní zábradlí</span>
+                    <h3>RD Popovice</h3>
+                    <p>Nerezové zábradlí s lankovým vypletením</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up delay-2" data-cat="venkovni"
+                 data-title="RD Popovice II"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-popovice-02/img/big/DSC_0023.JPG"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-popovice-02/img/big/DSC_0023.JPG" alt="RD Popovice II" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit foto</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Venkovní zábradlí</span>
+                    <h3>RD Popovice II</h3>
+                    <p>Nerezové zábradlí exteriér</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-cat="venkovni"
+                 data-title="RD Hradčovice"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-hradcovice/img/big/P7070038.JPG"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-hradcovice/img/big/P7070038.JPG" alt="RD Hradčovice" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit foto</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Venkovní zábradlí</span>
+                    <h3>RD Hradčovice</h3>
+                    <p>Venkovní nerezové zábradlí</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-up delay-1" data-cat="venkovni"
+                 data-title="RD Ostrožská Lhota"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-ostrozska-lhota/img/big/DSC_0154.JPG"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/venkovni-zabradli/rd-ostrozska-lhota/img/big/DSC_0154.JPG" alt="RD Ostrožská Lhota" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit foto</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Venkovní zábradlí</span>
+                    <h3>RD Ostrožská Lhota</h3>
+                    <p>Venkovní nerezové zábradlí</p>
+                </div>
+            </div>
+
+            <!-- OCELOVÉ VÝROBKY -->
+            <div class="project-card fade-up delay-2" data-cat="ocelove"
+                 data-title="Ocelové výrobky — ukázka realizací"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/ocelove-vyrobky/img/big/ocelove-zabradli-01.jpg","https://www.zabradli-sova.cz/templates/realizace/ocelove-vyrobky/img/big/ocelove-zabradli-hluk-01.jpg","https://www.zabradli-sova.cz/templates/realizace/ocelove-vyrobky/img/big/ocelove-zabradli-stare-mesto-02.jpg"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/ocelove-vyrobky/img/big/ocelove-zabradli-01.jpg" alt="Ocelové výrobky" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit album (3 fotky)</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Ocelové výrobky</span>
+                    <h3>Ocelové výrobky</h3>
+                    <p>Brány, ploty, ocelová zábradlí a další zakázkové výrobky z oceli</p>
+                </div>
+            </div>
+
+            <!-- STŘÍŠKY -->
+            <div class="project-card fade-up" data-cat="strisky"
+                 data-title="Vchodové stříšky"
+                 data-imgs='["https://www.zabradli-sova.cz/templates/realizace/strisky/img/big/DSCN0718.JPG","https://www.zabradli-sova.cz/templates/realizace/strisky/img/big/DSCN0892.JPG","https://www.zabradli-sova.cz/templates/realizace/strisky/img/big/DSCN0895.JPG","https://www.zabradli-sova.cz/templates/realizace/strisky/img/big/IMAG0279.jpg","https://www.zabradli-sova.cz/templates/realizace/strisky/img/big/IMG_20180919_125619.jpg"]'>
+                <div class="project-thumb">
+                    <img src="https://www.zabradli-sova.cz/templates/realizace/strisky/img/big/DSCN0718.JPG" alt="Vchodové stříšky" loading="lazy">
+                    <div class="project-overlay"><span>Zobrazit album (5 fotek)</span></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-cat">Přístřešky a stříšky</span>
+                    <h3>Vchodové stříšky</h3>
+                    <p>Kovové konstrukce s výplní z polykarbonátu — čiré i kouřové provedení</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose">×</button>
+    <button class="lb-prev" id="lbPrev">&#8249;</button>
+    <button class="lb-next" id="lbNext">&#8250;</button>
+    <div class="lb-img-wrap" id="lbWrap">
+        <div class="lb-spinner"></div>
+        <img class="lb-img" id="lbImg" src="" alt="">
+    </div>
+    <div class="lb-title" id="lbTitle"></div>
+    <div class="lb-counter" id="lbCounter"></div>
+</div>
+
 <!-- PROCESS -->
 <section class="process" id="postup">
     <div class="container">
         <div class="process-header fade-up">
-            <div class="section-label center">Jak spolupracujeme</div>
+            <div class="section-label center light">Jak spolupracujeme</div>
             <h2>Čtyři kroky k hotovému zábradlí</h2>
         </div>
         <div class="process-steps">
@@ -609,8 +1048,7 @@
                     <svg width="96" height="96" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
                         <rect x="12" y="24" width="72" height="60" rx="1"/>
                         <path d="M12 38h72M28 24V18a20 20 0 0140 0v6"/>
-                        <circle cx="48" cy="62" r="8"/>
-                        <path d="M48 70v10"/>
+                        <circle cx="48" cy="62" r="8"/><path d="M48 70v10"/>
                     </svg>
                 </div>
                 <div class="about-badge">
@@ -620,9 +1058,10 @@
             </div>
             <div class="about-content fade-up delay-2">
                 <div class="section-label">O nás</div>
-                <h2>Řemeslo jako vášeň, preciznost jako standard</h2>
-                <p>Jsem Marek Sova a zámečnictví je moje řemeslo. Přes 15 let se specializuji na výrobu a montáž nerezových a ocelových zábradlí pro soukromé i komerční zákazníky ve Zlíně a okolí.</p>
-                <p>Každý projekt beru osobně. Od zaměření až po finální montáž jsem přítomen a dohlížím na každý detail. Výsledkem je vždy dílo, které bude sloužit a vypadat skvěle po desetiletí.</p>
+                <h2>Řemeslo s tradicí a moderním přístupem</h2>
+                <p>Jsem Marek Sova a zámečnictví je moje řemeslo. Specializuji se na výrobu a montáž nerezových zábradlí v leštěné nebo kartáčované povrchové úpravě, kombinaci s dřevem nebo sklem.</p>
+                <p>Nabízím jak standardní typová řešení, tak design zcela dle přání zákazníka. Pro venkovní použití doporučuji plně nerezové provedení — bez složité údržby, odolné po celá desetiletí.</p>
+
                 <a href="#kontakt" class="btn btn-outline">Kontaktujte mě</a>
             </div>
         </div>
@@ -658,7 +1097,7 @@
                         <option>Vnitřní zábradlí</option>
                         <option>Venkovní zábradlí</option>
                         <option>Ocelové výrobky</option>
-                        <option>Práce ve výšce</option>
+                        <option>Přístřešky a stříšky</option>
                         <option>Jiné</option>
                     </select>
                 </div>
@@ -676,7 +1115,7 @@
                     </div>
                     <div>
                         <span class="ci-label">Telefon</span>
-                        <a href="tel:+420731900521" class="ci-value">+420 731 900 521</a>
+                        <a href="tel:+420732850521" class="ci-value">+420 732 850 521</a>
                     </div>
                 </div>
                 <div class="contact-info-item">
@@ -694,16 +1133,25 @@
                     </div>
                     <div>
                         <span class="ci-label">Adresa</span>
-                        <span class="ci-value">Záhřebská 456, Zlín</span>
+                        <span class="ci-value">Záchalupčí 954, 686 04 Kunovice</span>
                     </div>
                 </div>
                 <div class="contact-info-item">
                     <div class="ci-icon">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
                     </div>
                     <div>
-                        <span class="ci-label">Pracovní doba</span>
-                        <span class="ci-value">Po–Pá: 7:00 – 17:00</span>
+                        <span class="ci-label">IČ</span>
+                        <span class="ci-value">70425019</span>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="ci-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                    </div>
+                    <div>
+                        <span class="ci-label">DIČ</span>
+                        <span class="ci-value">CZ7508154610</span>
                     </div>
                 </div>
             </div>
@@ -716,10 +1164,15 @@
     <div class="container">
         <div class="footer-inner">
             <div class="footer-brand">ZÁMEČNICTVÍ&nbsp;<span>SOVA</span></div>
-            <p class="footer-copy">© 2026 Marek Sova · Zakázkové zámečnictví Zlín</p>
+            <p class="footer-copy">© 2026 Marek Sova · Zakázkové zámečnictví Kunovice</p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/zamecnictvisova" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+            </div>
             <ul class="footer-nav">
-                <li><a href="#proc-nas">Proč nás</a></li>
                 <li><a href="#sluzby">Služby</a></li>
+                <li><a href="#realizace">Realizace</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </div>
@@ -729,44 +1182,84 @@
 <script>
     // Nav scroll
     const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-        nav.classList.toggle('scrolled', window.scrollY > 60);
-    });
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
 
     // Hamburger
     const burger = document.getElementById('burger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const mobileClose = document.getElementById('mobileClose');
-    burger.addEventListener('click', () => {
-        burger.classList.toggle('open');
-        mobileMenu.classList.toggle('open');
-    });
-    mobileClose.addEventListener('click', () => {
-        burger.classList.remove('open');
-        mobileMenu.classList.remove('open');
-    });
-    document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', () => {
-        burger.classList.remove('open');
-        mobileMenu.classList.remove('open');
-    }));
+    const mob = document.getElementById('mobileMenu');
+    burger.addEventListener('click', () => { burger.classList.toggle('open'); mob.classList.toggle('open'); });
+    document.getElementById('mobileClose').addEventListener('click', () => { burger.classList.remove('open'); mob.classList.remove('open'); });
+    document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', () => { burger.classList.remove('open'); mob.classList.remove('open'); }));
 
     // Fade-up
-    const io = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.12 });
+    const io = new IntersectionObserver(e => e.forEach(x => { if (x.isIntersecting) x.target.classList.add('visible'); }), { threshold: 0.1 });
     document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+    // Filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const f = btn.dataset.filter;
+            document.querySelectorAll('.project-card').forEach(card => {
+                card.classList.toggle('hidden', f !== 'all' && card.dataset.cat !== f);
+            });
+        });
+    });
+
+    // Lightbox
+    let lbImgs = [], lbIdx = 0;
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    const lbWrap = document.getElementById('lbWrap');
+    const lbCounter = document.getElementById('lbCounter');
+    const lbTitle = document.getElementById('lbTitle');
+
+    function lbShow(imgs, idx, title) {
+        lbImgs = imgs; lbIdx = idx;
+        lb.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        lbTitle.textContent = title;
+        lbLoad(idx);
+    }
+    function lbLoad(i) {
+        lbWrap.classList.add('loading');
+        lbImg.src = '';
+        const img = new Image();
+        img.onload = () => { lbImg.src = lbImgs[i]; lbWrap.classList.remove('loading'); };
+        img.onerror = () => { lbImg.src = lbImgs[i]; lbWrap.classList.remove('loading'); };
+        img.src = lbImgs[i];
+        lbCounter.textContent = (i + 1) + ' / ' + lbImgs.length;
+    }
+    function lbClose() { lb.classList.remove('open'); document.body.style.overflow = ''; }
+    function lbPrev() { lbIdx = (lbIdx - 1 + lbImgs.length) % lbImgs.length; lbLoad(lbIdx); }
+    function lbNext() { lbIdx = (lbIdx + 1) % lbImgs.length; lbLoad(lbIdx); }
+
+    document.getElementById('lbClose').addEventListener('click', lbClose);
+    document.getElementById('lbPrev').addEventListener('click', lbPrev);
+    document.getElementById('lbNext').addEventListener('click', lbNext);
+    lb.addEventListener('click', e => { if (e.target === lb) lbClose(); });
+    document.addEventListener('keydown', e => {
+        if (!lb.classList.contains('open')) return;
+        if (e.key === 'Escape') lbClose();
+        if (e.key === 'ArrowLeft') lbPrev();
+        if (e.key === 'ArrowRight') lbNext();
+    });
+
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const imgs = JSON.parse(card.dataset.imgs);
+            const title = card.dataset.title;
+            lbShow(imgs, 0, title);
+        });
+    });
 
     // Form
     document.getElementById('contactForm').addEventListener('submit', function(e) {
         e.preventDefault();
         const btn = this.querySelector('button[type="submit"]');
-        btn.textContent = 'Odesílám...';
-        btn.disabled = true;
-        setTimeout(() => {
-            btn.textContent = '✓ Odesláno — brzy se ozvu';
-            btn.style.background = '#4A7C59';
-            this.reset();
-        }, 1200);
+        btn.textContent = 'Odesílám...'; btn.disabled = true;
+        setTimeout(() => { btn.textContent = '✓ Odesláno — brzy se ozvu'; btn.style.background = '#3D7A57'; this.reset(); }, 1200);
     });
 </script>
 </body>
